@@ -16,11 +16,8 @@ export default function Detail({ navigation }) {
 
         })
 
-
-
-
-    return (
-       <View 
+     return (
+    <View 
             style={{backgroundColor:'#ffff',
                     flex: 1,
                     flexDirection: 'column',
@@ -30,42 +27,63 @@ export default function Detail({ navigation }) {
                     padding: 5,
                     }} >
            <TouchableOpacity>
+            <View style={{width: '100%',
+                        height: 40,
+                        flexDirection: 'row-reverse',
+                        alignItems: 'center',
+                        padding: 10,
+                    }}  >   
             <Image 
-                    style={{marginHorizontal: 470,
-                                       
-                    }}
-                    source={require('..//Nike/cart.png')} />
+                source={require('..//Nike/cart.png')} />
+            </View>
             </TouchableOpacity>
-    <ScrollView>    
-        <View style={Tela}>
-                <Image 
-                style={{
-                    marginTop: 40,
-                    marginHorizontal: 80,
-                    width: 400,
-                    height: 250,}}
-                source={require('../Nike/Jordan1.png')}/>
-                <Text style={Line} />
-            <View style={Tela2} >
-                 
-                    <Text style={Texto} >Preço: R$ 659,90</Text>
-                    <Text style={Texto2} >Jordan 14 Retro Gym Red Toro</Text>
+        <ScrollView style={{width:'100%'}} >    
+            <View style={Tela}>
+                <View style={{
+                    alignItems:'center',
+                    justifyContent: 'center'}} >
+                    <Image 
+                    style={{
+                        width: 400,
+                        height: 250,}}
+                    source={require('../Nike/Jordan1.png')}/>
+                </View>
+                    <Text style={Line} />
+                <View style={Tela2} >
+                    
+                        <Text style={Texto} >Preço: R$ 659,90</Text>
+                        <Text style={Texto2} >Jordan 14 Retro Gym Red Toro</Text>
 
-                    <Text style={Texto4} >DESCRIÇÃO:</Text>
-                    <Text style={Texto3} >Jordan Brand lançou um novo colorway temático Chicago Bulls com o Jordan 14 Retro Gym Red Toro. Este lançamento se parece muito com o Jordan 14 Challenge Red, mas em vez de detalhes amarelos para imitar sua inspiração da Ferrari, o Gym Red 14 implementa painéis brancos para criar a vibração do uniforme dos Bulls.</Text>
+                        <Text style={Texto4} >DESCRIÇÃO:</Text>
+                        <Text style={Texto3} >Jordan Brand lançou um novo colorway temático Chicago Bulls com o Jordan 14 Retro Gym Red Toro. Este lançamento se parece muito com o Jordan 14 Challenge Red, mas em vez de detalhes amarelos para imitar sua inspiração da Ferrari, o Gym Red 14 implementa painéis brancos para criar a vibração do uniforme dos Bulls.</Text>
+                </View>         
                 
-                <TouchableOpacity style={Btn}>
-                    <Text style={{color: '#ffff',
-                                fontFamily:'OpenSans-Bold',}}>
-                         COMPRAR
-                    </Text>
-                        
-                </TouchableOpacity>          
-            </View> 
-        </View>
-    </ScrollView>  
+            </View>
+        </ScrollView>  
+        <View style={{alignItems: 'center',
+                    justifyContent:'center',
+                    flexDirection: 'row',
+                    padding: 10}}>
+            <TouchableOpacity style={Btn}>
+              <View style={{
+                    alignItems: 'center',
+                    justifyContent:'space-around',
+                    flexDirection: 'row',
+                   }} >  
+                <Image source={require('..//Nike/cart.png')}/>
+
+                <Text style={{color: 'black',
+                            fontFamily:'OpenSans-Bold',
+                            paddingLeft: 15,
+                            }}>
+                   COMPRAR
+                </Text>
+              </View> 
+                            
+            </TouchableOpacity> 
+        </View>                         
     
-        </View> 
+    </View> 
 
 
 
@@ -78,8 +96,7 @@ const Style = StyleSheet.create({
 
     Line:{
       
-        marginVertical: -20,
-        marginBottom: 5,
+      
         borderBottomColor: '#d8d8d8',
         borderBottomWidth: 3,
   
@@ -120,7 +137,7 @@ const Style = StyleSheet.create({
     },
     Texto2:{
 
-        marginTop: 5,
+       
         fontFamily:'OpenSans-Bold',
         color: 'black',
         opacity: 0.4,
@@ -130,7 +147,7 @@ const Style = StyleSheet.create({
 
     Texto3:{
 
-        marginTop: 10,
+        padding: 5,
         fontFamily:'OpenSans-Regular',
         color: 'black',
         fontSize: 18,
@@ -140,7 +157,7 @@ const Style = StyleSheet.create({
     },
     Texto4:{
 
-        marginTop: 20,
+        paddingTop: 10,
         fontFamily:'OpenSans-Bold',
         color: 'black',
         fontSize: 24,
@@ -149,19 +166,20 @@ const Style = StyleSheet.create({
 
 
     },
+
     Btn:{
 
-        position: 'absolute',
-        marginHorizontal: 270,
-        marginVertical: 470,
+      
         justifyContent: 'center',
         alignItems: 'center',
-        width: 220,
+        width: 360,
         height: 90,
-        borderRadius: 15,
-        backgroundColor: 'black',
+        borderWidth: 3,
+        borderColor: 'black',
+        borderRadius: 20,
+        backgroundColor: '#ffff',
         fontSize: 18,
-        color: '#ffff'
+        
 
 
 
