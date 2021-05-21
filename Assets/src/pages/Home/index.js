@@ -115,8 +115,8 @@ export default function Home() {
              <Shoes 
              img={require('../Nike/list/ver-4.png')} 
              cost='R$ 499,90'
-             onClick={() => alert('Clicou') }>
-              Jordan 1 Mid Light Smoke Red
+             onClick={() => navigation.navigate('Detail4')}>
+              Jordan 1 Retro High Light Smoke Grey
              </Shoes>
             </View>
 
@@ -125,14 +125,14 @@ export default function Home() {
              <Shoes 
              img={require('../Nike/list/ver-5.png')} 
              cost='R$ 1250,90'
-             onClick={() => alert('Clicou') }>
+             onClick={() => navigation.navigate('Detail5') }>
               Jordan 1 Retro High Tie
              </Shoes>
 
              <Shoes 
              img={require('../Nike/list/ver-6.png')} 
              cost='R$ 499,90'
-             onClick={() => alert('Clicou') }>
+             onClick={() => navigation.navigate('Detail6') }>
               Jordan 1 Mid Chicago Toe
              </Shoes>
             </View>
@@ -142,7 +142,7 @@ export default function Home() {
              <Shoes 
              img={require('../Nike/list/ver-7.png')} 
              cost='R$ 980,90'
-             onClick={() => alert('Clicou') }>
+             onClick={() => navigation.navigate('Detail7')}>
               Jordan 11 Retro Low White Concord
              </Shoes>
 
