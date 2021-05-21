@@ -97,8 +97,8 @@ export default function Home() {
 
              <Shoes 
              img={require('../Nike/list/ver-1.png')} 
-             cost='R$ 299,90'
-             onClick={() => alert('Clicou')}>
+             cost='R$ 953,90'
+             onClick={() => navigation.navigate('Detail2')}>
               Nike ISPA Overreackt Sail Multi
              </Shoes>
             </View>
@@ -108,7 +108,7 @@ export default function Home() {
              <Shoes 
              img={require('../Nike/list/ver-3.png')} 
              cost='R$ 459,90'
-             onClick={() => alert('Clicou') }>
+             onClick={() => navigation.navigate('Detail3')}>
               Jordan 1 Mid Light Smoke Grey
              </Shoes>
 
