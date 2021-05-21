@@ -23,6 +23,7 @@ export default function Detail({ navigation }) {
        <View 
             style={{backgroundColor:'#ffff',
                     flex: 1,
+                    flexDirection: 'column',
                     width: '100%',
                     height: '100%',
                     backgroundColor: '#ffff',
