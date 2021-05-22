@@ -4,7 +4,7 @@
 ![image](https://camo.githubusercontent.com/0b9bce580a369d91352cf37397f1e079ef104531fc0bc53a145deb8f43fca535/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f52656163745f4e61746976652d3230323332413f7374796c653d666f722d7468652d6261646765266c6f676f3d7265616374266c6f676f436f6c6f723d363144414642)
 ng iOS apps is limited to macOS. Tools like [Expo](https://expo.io/) can be used to work around this.
 
-## 📲 Introduction.
+## 📲 Inside the app.
 
 ![App screenshots (1)](https://user-images.githubusercontent.com/83431609/119242733-ca348600-bb36-11eb-9ad3-cd11b922fb12.png)
 
