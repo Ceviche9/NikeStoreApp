@@ -6,9 +6,7 @@ ng iOS apps is limited to macOS. Tools like [Expo](https://expo.io/) can be used
 
 ## 📲 Introduction.
 
-![image](https://user-images.githubusercontent.com/83431609/119064088-f0301e00-b9b0-11eb-8936-8e4305d64b9a.png)
-![image](https://user-images.githubusercontent.com/83431609/119064105-f920ef80-b9b0-11eb-849c-737ab6b08942.png)
-![image](https://user-images.githubusercontent.com/83431609/119066508-510e2500-b9b6-11eb-918e-d5bee26539a2.png)
+![App screenshots](https://user-images.githubusercontent.com/83431609/119242702-96f1f700-bb36-11eb-9cbf-ebfb490efbf9.png)
 
 
 
