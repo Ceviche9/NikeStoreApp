@@ -4,14 +4,20 @@ import {View,
         Image, 
         StyleSheet, 
         ScrollView, 
-        TouchableOpacity} from 'react-native'
-
+        TouchableOpacity,
+    
+    } from 'react-native'
+import  { useNavigation } from '@react-navigation/native'
 
 export default function Body(props) {
 
+
+    const navigation = useNavigation();
+
     return (
 
-        <View 
+      
+        <View
             style={{backgroundColor:'#ffff',
                     flex: 1,
                     flexDirection: 'column',
@@ -19,7 +25,7 @@ export default function Body(props) {
                     height: '100%',
                     backgroundColor: '#ffff',
                     padding: 5,
-                    }} >
+                    }} >         
            <TouchableOpacity>
             <View style={{width: '100%',
                         height: 40,
@@ -50,15 +56,34 @@ export default function Body(props) {
 
                         <Text style={Texto4} >DESCRIÇÃO:</Text>
                         <Text style={Texto3} >{props.discrp}</Text>
+                </View>
+                <View style={{flex:1 , 
+                            width: '100%',
+                            height: 280,
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            paddingTop: 20,
+                            }} >
+                 <Image
+                 style={Brand}
+                 source={props.brand}
+
+                 />   
+                    
                 </View>         
                 
             </View>
         </ScrollView>  
-        <View style={{alignItems: 'center',
+        <View style={{
+              
+                    alignItems: 'center',
                     justifyContent:'center',
                     flexDirection: 'row',
                     padding: 10}}>
-            <TouchableOpacity style={Btn}>
+            <TouchableOpacity 
+            style={Btn}
+            onPress={() => navigation.navigate('Cart') }
+            >
               <View style={{
                     alignItems: 'center',
                     justifyContent:'space-around',
@@ -72,8 +97,7 @@ export default function Body(props) {
                             }}>
                    COMPRAR
                 </Text>
-              </View> 
-                            
+              </View>        
             </TouchableOpacity> 
         </View>                         
     
@@ -116,7 +140,7 @@ const Style = StyleSheet.create({
 
 
         width: '100%',
-        height: 600,
+        height: 450,
         padding: 10,
         backgroundColor: '#ffff',
 
@@ -179,6 +203,12 @@ const Style = StyleSheet.create({
         backgroundColor: '#ffff',
         fontSize: 18,
         
+    },
+
+    Brand:{
+
+        width: 390,
+        height: 220,
 
 
 
@@ -192,4 +222,4 @@ const Style = StyleSheet.create({
   })
   
   
-  const {Tela, Texto,Texto2,Texto3,Texto4, Tela2, Line, Btn } = Style;
+  const {Tela, Texto,Texto2,Texto3,Texto4, Tela2, Line, Btn, Brand } = Style;

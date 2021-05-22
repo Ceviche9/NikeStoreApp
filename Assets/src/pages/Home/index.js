@@ -13,10 +13,11 @@ import Shoes from './Shoes'
 
 export default function Home() {
 
+  
+
   const navigation = useNavigation();
 
-
-
+  
 
     return (
 
@@ -149,7 +150,7 @@ export default function Home() {
              <Shoes 
              img={require('../Nike/list/ver-8.png')} 
              cost='R$ 1250,90'
-             onClick={() => alert('Clicou') }>
+             onClick={() => navigation.navigate('Detail8') }>
               Jordan 11 Retro Low White Bred
              </Shoes>
             </View>
@@ -159,15 +160,15 @@ export default function Home() {
              <Shoes 
              img={require('../Nike/list/ver-9.png')} 
              cost='R$ 490,90'
-             onClick={() => alert('Clicou') }>
+             onClick={() => navigation.navigate('Detail9') }>
               Jordan 1 Retro High Royal
              </Shoes>
 
              <Shoes 
              img={require('../Nike/list/ver-10.png')} 
-             cost='R$ 299,90'
-             onClick={() => alert('Clicou') }>
-              Jordan 1 Retro High Green
+             cost='R$ 390,90'
+             onClick={() => navigation.navigate('Detail10')}>
+              Jordan 1 Retro High Pine Green
              </Shoes>
             </View>
           </View>
@@ -219,11 +220,11 @@ const Style = StyleSheet.create({
     },
 
     header:{
-      
+     
      alignItems:'center',
      justifyContent: 'center',
      width:'100%',
-     height: 100,
+     height: 90,
 
     },
 

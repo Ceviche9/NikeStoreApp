@@ -1,4 +1,4 @@
-import React, {StackNavigator} from 'react'
+import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -12,6 +12,10 @@ import Detail4 from './pages/Detail/index4';
 import Detail5 from './pages/Detail/index5';
 import Detail6 from './pages/Detail/index6';
 import Detail7 from './pages/Detail/index7';
+import Detail8 from './pages/Detail/index8';
+import Detail9 from './pages/Detail/index9';
+import Detail10 from './pages/Detail/index10';
+import Cart from './pages/Shop/index';
 
 
 const Stack = createStackNavigator();
@@ -23,9 +27,24 @@ function Routes(){
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen 
-                name='Home'
+                name='Nike Store'
                 component={Home}
+                options={{
+
+                headerStyle:{
+                backgroundColor: '#ffff',
+                
+                },
+                headerTintColor: 'black',
+
+                headerTitleStyle: {
+                    fontFamily: 'OpenSans-BoldItalic',
+                  },}}
                 />
+
+    
+
+
                 <Stack.Screen
                 name='Detail'
                 component={Detail}
@@ -55,6 +74,23 @@ function Routes(){
                 <Stack.Screen
                 name='Detail7'
                 component={Detail7}
+                />
+                <Stack.Screen
+                name='Detail8'
+                component={Detail8}
+                />
+                <Stack.Screen
+                name='Detail9'
+                component={Detail9} 
+                />
+                <Stack.Screen
+                name='Detail10'
+                component={Detail10} 
+                />
+                
+                <Stack.Screen
+                name='Cart'
+                component={Cart} 
                 />
                 
 
