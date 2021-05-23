@@ -7,7 +7,7 @@
 ## 📲 Inside the app.
 
 
-![App screenshots](https://user-images.githubusercontent.com/83431609/119242877-fac8ef80-bb37-11eb-9362-b15f4c898676.png)
+![App screenshots (1)](https://user-images.githubusercontent.com/83431609/119247192-0202f400-bb5e-11eb-8627-ce2cf76b968f.png)
 
 
 
