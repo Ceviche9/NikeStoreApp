@@ -7,6 +7,7 @@ import {View,
         TouchableOpacity,
       } from 'react-native'
 
+
 import  { useNavigation } from '@react-navigation/native'
 
 import Shoes from './Shoes'
@@ -55,24 +56,30 @@ export default function Home() {
 
         <ScrollView> 
           <View>
-            <Text style={Titulo}>Novidades</Text>
+            <Text style={Titulo}>Novidades:</Text>
           </View>
 
             <View 
             style={{
 
 
-              height: 410,
+              height: 310,
               width: '100%' ,
-              paddingTop: 30,
+              paddingTop: 10,
               justifyContent: 'center',
               alignItems: 'center',
+              borderWidth: 0.5,
+              borderRadius: 10,
+              borderColor: 'black',
+        
+        
       
              
              }}>
-             <TouchableOpacity onPress={() => alert('Clicou')} >  
-              <Image styles={img} 
-              source={require('../Nike/coverBanner.png')} />
+             <TouchableOpacity onPress={() => alert('Clicou')} >
+                
+              <Image style={img} 
+              source={require('../Nike/brand/JordanW.png')} />
              </TouchableOpacity> 
             </View>
         
@@ -237,7 +244,10 @@ const Style = StyleSheet.create({
 
     img:{
 
-      alignItems: 'center'
+      width: 400,
+      height: 240,
+      alignItems: 'center',
+
 
     },
 

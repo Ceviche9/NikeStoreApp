@@ -67,9 +67,8 @@ export default function Body(props) {
                  <Image
                  style={Brand}
                  source={props.brand}
-
-                 />   
-                    
+                 />
+                 
                 </View>         
                 
             </View>
@@ -213,7 +212,7 @@ const Style = StyleSheet.create({
 
 
     },
-
+    
     
 
     
@@ -222,4 +221,4 @@ const Style = StyleSheet.create({
   })
   
   
-  const {Tela, Texto,Texto2,Texto3,Texto4, Tela2, Line, Btn, Brand } = Style;
+  const {Tela, Texto,Texto2,Texto3,Texto4, Tela2, Line, Btn, Brand} = Style;
