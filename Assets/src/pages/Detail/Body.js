@@ -9,6 +9,8 @@ import {View,
     } from 'react-native'
 import  { useNavigation } from '@react-navigation/native'
 
+import Footer from  './Footer'
+
 export default function Body(props) {
 
 
@@ -69,8 +71,21 @@ export default function Body(props) {
                  source={props.brand}
                  />
                  
-                </View>         
-                
+                </View>
+               
+               
+               
+               
+                <View
+                style={{
+                    
+                    width: '100%',
+                    height: 300
+                }}
+                >
+                    <Footer/>
+                    
+                </View>
             </View>
         </ScrollView>  
         <View style={{
@@ -212,6 +227,8 @@ const Style = StyleSheet.create({
 
 
     },
+
+
     
     
 
@@ -221,4 +238,4 @@ const Style = StyleSheet.create({
   })
   
   
-  const {Tela, Texto,Texto2,Texto3,Texto4, Tela2, Line, Btn, Brand} = Style;
+  const {Tela, Texto,Texto2,Texto3,Texto4, Tela2, Line, Btn, Brand, } = Style;

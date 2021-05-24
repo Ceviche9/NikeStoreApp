@@ -15,15 +15,16 @@ export default function Shoes(props) {
     return (
      
         <TouchableOpacity style={Tela} onPress={props.onClick} >
-           <Image
-            source={props.img}
-            style={Shoe}
-           />
-            <View style={Telatxt} >
-                <Text style={imgtxt}>{filterDesc(props.children)}</Text>
-                <Text style={price}>{props.cost}</Text>
-            </View>
-
+          <View style={Tela2} > 
+            <Image
+                source={props.img}
+                style={Shoe}
+            />
+                <View style={Telatxt} >
+                    <Text style={imgtxt}>{filterDesc(props.children)}</Text>
+                    <Text style={price}>{props.cost}</Text>
+                </View>
+          </View>   
         </TouchableOpacity>
 
       
@@ -51,6 +52,17 @@ const estilo = StyleSheet.create({
         height: 300,
         alignItems: 'center',
         paddingTop: 5,  
+
+    },
+
+    Tela2:{
+
+        alignItems: 'center',
+        justifyContent: 'center'
+
+
+
+
 
     },
 
@@ -95,4 +107,4 @@ const estilo = StyleSheet.create({
 
 })
 
-const {Tela, Texto, Shoe, preço,imgtxt, Telatxt, price} = estilo;
+const {Tela, Tela2, Texto, Shoe, preço,imgtxt, Telatxt, price} = estilo;

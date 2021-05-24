@@ -87,13 +87,15 @@ export default function Home() {
           <Text style={Line2} />
 
           <View style={{height: 50, 
-                        width: 200, 
+                        width: 200,
+                        justifyContent: 'flex-end',
+                   
                         }} >
-           <Text style={Titulo2} >Populares</Text>
+           <Text style={Titulo2} >Populares:</Text>
           </View>
 
-          <ScrollView>
-          <View style={{marginTop: 64}}  >
+          
+          <View style={{paddingTop: 10}} >
             <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
              
              <Shoes 
@@ -179,16 +181,6 @@ export default function Home() {
              </Shoes>
             </View>
           </View>
-
-
-
-
-
-
-
-
-
-          </ScrollView>
         </ScrollView>     
         </View>
 
