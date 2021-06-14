@@ -13,6 +13,13 @@ This app features all the latest tools and practices in web development!
 ![image](https://camo.githubusercontent.com/0b9bce580a369d91352cf37397f1e079ef104531fc0bc53a145deb8f43fca535/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f52656163745f4e61746976652d3230323332413f7374796c653d666f722d7468652d6261646765266c6f676f3d7265616374266c6f676f436f6c6f723d363144414642)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
+## Getting started
+
+1. Clone this repo using `https://github.com/Ceviche9/NikeStoreApp`
+2. Run `npm install` to install dependencies.<br />
+3. Run `react-native run android` or `react-native run ios`
+
+
 ## 📲 Inside the app.
 
 
